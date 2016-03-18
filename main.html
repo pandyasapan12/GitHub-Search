@@ -1,0 +1,61 @@
+<!-- 
+    First Website Development Project
+-->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Github Hub</title>
+        
+        <link rel="stylesheet" href="site.css" />
+    </head>
+    
+    <body>
+        <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/main.html">Home</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="img/logo.gif" class="border" /></div>
+            <div>This is a site to search Github for interesting projects.</div>
+            
+        </header>
+        <section id="main">
+            <p>In this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github</a> projects <span>and the data</span> about those  projects.</p>
+            <form action="http://wilder.azurewebsites.net/echo" method="POST" class="border simple-form" id="githubSearchForm" >
+                <label for="searchPhrase">Search Phrase: </label>
+                <input type="text" name="searchPhrase" id="searchPhrase"/> <br/>
+                <input type="checkbox" name="useStars" id="useStars" checked="true" /> <label for="useStars">Use stars ?</label><br/>
+                <label for="langChoice">Language:</label>
+                <select name="langChoice" id="langChoice">
+                    <option>All</option>
+                    <option>JavaScript</option>
+                    <option selected>C#</option> 
+                    <option>Java</option>
+                    <option>Ruby</option>
+                </select> <br/>
+                <input type="submit" value="search" />       
+            </form>
+            <div id="results" class="border" >
+                <button id="toggleButton">Hide</button>
+                <div id="resultList">This is where results will live...eventually.</div>
+            </div>
+        </section>
+        <footer>
+            &copy;2015 Sapan Pandya
+        </footer>
+        </div>
+        
+        <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        
+    </body>
+    
+</html>
